@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjunatha MJ - Profile</title>
+    <link rel="stylesheet" href="./css/stye.css">
+    <script src="./js/scripts.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#techstack">Tech Stack</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="container">
+            <img src="./images/profile.jpeg" alt="Manjunatha MJ" class="profile-img">
+            <h1>Manjunatha MJ</h1>
+            <p>Software Engineer from Bangalore, India</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Software Developer skilled at technical, communication, and presentations. Experienced in the full project life cycle from design to implementation to integration. Multi-faceted software developer knowledgeable in HTML, JavaScript, and React. True team player with 2+ years of experience in front-end development, strongly worked on core Angular.</p>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <div class="container">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Watching movies</li>
+                    <li>Reading books</li>
+                    <li>Watching YouTube</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="techstack">
+            <div class="container">
+                <h2>Tech Stack</h2>
+                <ul>
+                    <li>React 17+ to Latest (18)</li>
+                    <li>HTML5, CSS3, Bootstrap5</li>
+                    <li>Core Java, JavaScript, Next.js</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:manjunath.mj@vcnrtech.com">manjunath.mj@vcnrtech.com</a></p>
+                <p>Phone: +91 8123859520</p>
+                <p><a href="https://www.linkedin.com/in/manju-mj-a95992157/">LinkedIn Profile</a></p>
+                <div id="map"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Manjunatha MJ</p>
+        </div>
+    </footer>
+
+    <script>
+        function initMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(12.9716, 77.5946),
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3aviU6KHXAjoSnxcw6qbOhjnFctbxPkE&callback=initMap"></script>
+</body>
+</html>
